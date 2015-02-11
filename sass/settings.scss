@@ -1,0 +1,20 @@
+//Base
+
+
+// Media Query Ranges
+
+$small-only: "only screen and (max-width: 640px)";
+$medium-down: "only screen and (max-width: 960px)";
+$medium-only: "only screen and (min-width: 641px) and (max-width: 960px)";
+$medium-up: "only screen and (min-width: 641px)";
+$large-up: "only screen and (min-width: 961px)";
+  
+//Colors
+
+$dark_color: #FF0000;
+$medium_color: #00FF00;
+$light_color: #0000FF;
+
+// Standard Padding
+
+$padding: 30px;

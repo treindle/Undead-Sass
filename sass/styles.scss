@@ -1,7 +1,43 @@
-
+@import "settings";
+@import "reset";
+@import "http://fonts.googleapis.com/css?family=Droid+Serif:400,700.css";
 
 $dark-color : #333333;
+$blue-within: rgb(53, 154, 162);
+$font-blue: rgb(87, 190, 194);
+
 
 body {
-  background: $dark-color;
+
+  font-family: Droid Serif;
+  letter-spacing: 0.5px;
 }
+
+
+
+/* INLINE MEDIA QUERIES */
+
+
+@media #{$small-only} {
+  h1{
+    display: block;
+    background: $blue-within;
+    text-align: center;
+    color: $font-blue;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .nav li {   
+    display: none;
+  }
+}  
+
+  
+  @media #{$medium-only} {
+
+  }
+
+  @media #{$large-up} {
+
+  }
