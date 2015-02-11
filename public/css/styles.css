@@ -44,7 +44,7 @@ body {
 .nav {
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: solid 1px #53bec2;
+  border-bottom: #53bec2;
   text-align: center;
   word-spacing: 30px; }
 
@@ -61,8 +61,13 @@ h2 a, h3 a:-webkit-any-link {
   border-bottom: 1px dashed;
   border-color: #4fb3b9; }
 
-.content, aside {
+.content {
   margin: 40px; }
+  @media only screen and (min-width: 961px) {
+    .content {
+      float: left;
+      margin: 0;
+      width: 70%; } }
 
 h1 {
   padding-top: 30px;
@@ -72,7 +77,8 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
-  border-bottom: solid 1px #53bec2; }
+  border-bottom: solid 1px #53bec2;
+  border-top: solid 1px #53bec2; }
 
 h2 {
   padding-top: 10px;
@@ -111,6 +117,13 @@ a.read_more {
   display: inline; }
 
 /* INLINE MEDIA QUERIES */
+@media only screen and (min-width: 961px) {
+  body {
+    border-top: 50px solid #53bec2;
+    border-bottom: 50px solid #53bec2;
+    border-left: 70px solid #53bec2;
+    border-right: 70px solid #53bec2; } }
+
 @media only screen and (max-width: 640px) {
   h1 {
     padding: 0;
@@ -125,9 +138,24 @@ a.read_more {
   .nav li {
     display: none; } }
 
+@media only screen and (min-width: 961px) {
+  article {
+    padding: 30px 50px 30px 40px;
+    border-right: 1px solid #53bec2; } }
+
 @media only screen and (max-width: 640px) {
   aside {
     display: none; } }
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  aside {
+    margin: 40px; } }
+@media only screen and (min-width: 961px) {
+  aside {
+    display: inline;
+    float: right;
+    width: 20%;
+    padding-right: 60px;
+    padding-top: 20px; } }
 
 @media only screen and (max-width: 640px) {
   .left {
@@ -135,7 +163,22 @@ a.read_more {
 @media only screen and (min-width: 641px) and (max-width: 960px) {
   .left {
     display: none; } }
+@media only screen and (min-width: 961px) {
+  .left {
+    padding-top: 23px;
+    margin-right: 40px;
+    display: inline;
+    float: right; } }
 
 @media only screen and (max-width: 640px) {
-  .footer_links li {
+  .footer_links {
     text-decoration: none; } }
+@media only screen and (min-width: 961px) {
+  .footer_links {
+    margin-left: 40px;
+    border-top: none;
+    float: left; } }
+
+@media only screen and (min-width: 961px) {
+  footer {
+    border-top: 1px solid #53bec2; } }

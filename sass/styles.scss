@@ -20,7 +20,7 @@ body {
 .nav {
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: solid 1px $border-color;
+  border-bottom: $border-color;
   text-align: center;
   word-spacing: 30px;
 
@@ -41,8 +41,14 @@ h2 a, h3 a:-webkit-any-link {
   border-color: $font-blue;
 }
 
-.content, aside {
+.content {
   margin: 40px;
+  
+  @media #{$large-up}{
+    float: left;
+    margin: 0;
+    width: 70%;
+  }
 }
 
 h1 {
@@ -55,6 +61,8 @@ h1 {
   text-align: center;
   font-size: 18px;
   border-bottom: solid 1px $border-color;
+    border-top: solid 1px $border-color;
+
 
 }
 
@@ -108,6 +116,15 @@ a.read_more {
 
 /* INLINE MEDIA QUERIES */
 
+body {
+  @media #{$large-up} {
+   border-top: 50px solid $border-color;
+   border-bottom: 50px solid $border-color;
+   border-left: 70px solid $border-color;
+   border-right: 70px solid $border-color;
+  }
+}
+
 
 h1 {
   @media #{$small-only} {
@@ -119,29 +136,24 @@ h1 {
     font-size: 12px;
     letter-spacing: 3px;
   }  
- 
-  @media #{$medium-only} {
 
-    
-  }
+  
 
-  @media #{$large-up} {
-
-  }
-
-}
+ }
 
 .nav li {
   @media #{$small-only} {
     display: none;
   }  
- 
-  @media #{$medium-only} {
+}
 
-  }
 
+
+
+article {
   @media #{$large-up} {
-
+    padding: 30px 50px 30px 40px;
+    border-right: 1px solid $border-color;
   }
 }
 
@@ -151,11 +163,16 @@ aside {
   }  
  
   @media #{$medium-only} {
-    
+    margin: 40px;
   }
 
   @media #{$large-up} {
-
+    display: inline;
+    float: right;
+    width: 20%;
+    padding-right: 60px;
+    padding-top: 20px;
+   
   }
 }
 
@@ -166,27 +183,36 @@ aside {
  
   @media #{$medium-only} {
     display: none;
-
   }
 
   @media #{$large-up} {
-
+    padding-top: 23px;
+    margin-right: 40px;
+    display: inline;
+    float: right;
   }
 }
 
-.footer_links li{
+.footer_links {
   @media #{$small-only} {
     text-decoration: none;
 
   }  
- 
-  @media #{$medium-only} {
-
-  }
 
   @media #{$large-up} {
-
+    margin-left: 40px;
+    border-top: none;
+    float: left;
   }
 }
+
+footer{
+  @media #{$large-up} {
+    border-top: 1px solid $border-color;
+  }
+}
+
+
+
 
 
