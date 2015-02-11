@@ -36,18 +36,106 @@ table {
   clear: both; }
 
 body {
+  background: #eef9ea;
   font-family: Droid Serif;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  line-height: 25px; }
+
+.nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #53bec2;
+  text-align: center;
+  word-spacing: 30px; }
+
+.nav li {
+  display: inline; }
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #102036; }
+
+h2 a, h3 a:-webkit-any-link {
+  color: #102036;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  border-color: #4fb3b9; }
+
+.content, aside {
+  margin: 40px; }
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #4fb3b9;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: solid 1px #53bec2; }
+
+h2 {
+  padding-top: 10px;
+  font-size: 30px; }
+
+h3 {
+  padding-top: 7px;
+  padding-bottom: 40px;
+  color: #4fb3b9; }
+
+h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #359aa2;
+  font-size: 20px; }
+
+aside p {
+  padding-bottom: 40px; }
+
+a.read_more {
+  padding: 15px;
+  display: block;
+  background: #359aa2;
+  text-align: center;
+  font-size: 16px;
+  color: #53bec2; }
+
+.footer_links {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid 1px #53bec2;
+  text-align: center;
+  word-spacing: 10px; }
+
+.footer_links li {
+  display: inline; }
 
 /* INLINE MEDIA QUERIES */
 @media only screen and (max-width: 640px) {
   h1 {
+    padding: 0;
     display: block;
     background: #359aa2;
     text-align: center;
-    color: #57bec2;
-    text-transform: uppercase;
-    font-size: 14px; }
+    color: #4fb3b9;
+    font-size: 12px;
+    letter-spacing: 3px; } }
+
+@media only screen and (max-width: 640px) {
   .nav li {
     display: none; } }
 
+@media only screen and (max-width: 640px) {
+  aside {
+    display: none; } }
+
+@media only screen and (max-width: 640px) {
+  .left {
+    display: none; } }
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  .left {
+    display: none; } }
+
+@media only screen and (max-width: 640px) {
+  .footer_links li {
+    text-decoration: none; } }
